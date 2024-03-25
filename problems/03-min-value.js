@@ -5,7 +5,21 @@ The function should return the smallest number of the array.
 If the array is empty, the function should return `null`.
 */
 
-// Your code here 
+
+let minValue = function(nums) {
+    let number = Infinity;
+
+    if(nums.length === 0) {
+        return null;
+    }
+    for(let i = 0; i < nums.length; i++) {
+        if(nums[i] < number) {
+            number = nums[i];
+            // console.log(number);
+        }
+    }
+    return number;
+}
 
 
 console.log(minValue([4, 6, 3, 5, 2, 4])); // 2
