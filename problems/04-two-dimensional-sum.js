@@ -3,9 +3,17 @@ Write a function `twoDimensionalSum(arr)` that takes in a 2D array of numbers
 and returns the total sum of all numbers.
 */
 
-// Your code here 
+let twoDimensionalSum = function(arr) {
+    let sum = 0;
 
-
+    for(let i = 0; i < arr.length; i++) {
+        for(let j = 0; j < arr[i].length; j++) {
+            sum += arr[i][j];
+            // console.log(sum);
+        }
+    }
+    return sum;
+}
 
 let arr1 = [
     [1, 3],
